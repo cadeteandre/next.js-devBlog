@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -23,12 +24,12 @@ export default function Home() {
             <p className="text-gray-600">
               Discover the new features of Next.js 14 and how it can improve your Frontend development.
             </p>
-            <a
+            <Link
               href="/posts/nextjs-14"
               className="inline-block mt-4 text-blue-600 hover:text-blue-800"
             >
               Read more →
-            </a>
+            </Link>
           </div>
         </article>
 
@@ -41,12 +42,12 @@ export default function Home() {
             <p className="text-gray-600">
               Learn advanced TypeScript techniques to improve your code.
             </p>
-            <a
+            <Link
               href="/posts/typescript-tips"
               className="inline-block mt-4 text-blue-600 hover:text-blue-800"
             >
               Read more →
-            </a>
+            </Link>
           </div>
         </article>
 
@@ -59,23 +60,23 @@ export default function Home() {
             <p className="text-gray-600">
               Understand how Server Components can revolutionize your React applications.
             </p>
-            <a
+            <Link
               href="/posts/server-components"
               className="inline-block mt-4 text-blue-600 hover:text-blue-800"
             >
               Read more →
-            </a>
+            </Link>
           </div>
         </article>
       </section>
 
       <section className="text-center">
-        <a
+        <Link
           href="/posts"
           className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
         >
           View all posts
-        </a>
+        </Link>
       </section>
     </div>
   );
